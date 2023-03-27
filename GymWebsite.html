@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>my fitness club</title>
+    <link rel="stylesheet" href="CSS/GymWebsite.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Crimson+Pro&family=Katibeh&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Crimson Pro", serif;
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url(image/Untitled\ design.png);
+        background-size: cover;
+      }
+
+      .header {
+        position: sticky;
+      }
+
+      /* css for left */
+      .left {
+        /* border: 2px solid red; */
+        display: inline-block;
+        position: absolute;
+        left: 34px;
+        top: 20px;
+        text-align: center;
+      }
+
+      .left img {
+        width: 50px;
+        display: block;
+        margin: auto;
+        filter: invert(100%);
+      }
+
+      .left div {
+        font-size: 25px;
+        line-height: 35px;
+      }
+
+      /* css for mid  */
+      .mid {
+        /* border: 2px solid red; */
+        display: block;
+        width: 44%;
+        margin: 20px auto;
+      }
+
+      .navbar {
+        list-style: none;
+        display: inline-block;
+      }
+
+      .navbar li {
+        display: inline-block;
+        font-size: 20px;
+      }
+
+      .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 34px 23px;
+      }
+
+      /* .navbar li a:hover,
+      .navbar li a.active {
+        text-decoration: underline;
+        color: grey;
+      } */
+
+      /* style for right  */
+      .right {
+        /* border: 2px solid red; */
+        position: absolute;
+        right: 34px;
+        top: 20px;
+        display: inline-block;
+      }
+
+      .btn {
+        background-color: black;
+        /* border: 1px solid white; */
+        border-radius: 8px;
+        margin: 0px 8px;
+        padding: 4px 8px;
+        font-family: "Crimson Pro", serif;
+        color: white;
+      }
+
+      .btn a {
+        color: white;
+      }
+
+      /* .btn a:hover {
+        color: rgb(163, 148, 148);
+        text-transform: uppercase;
+      } */
+
+      .btn input {
+        border-radius: 6px;
+        display: block;
+        margin: auto;
+        width: 200%;
+      }
+      .active{
+        position: absolute;
+        bottom: -0.2rem;
+        height: 2px;
+        width: 6.5rem;
+        background-color: #fff;
+        transition: transform 0.25s;
+      }
+      .nav-item:nth-child(2):hover ~ .active{
+        transform: translateX(7.3rem);
+      }
+      .nav-item:nth-child(3):hover ~ .active{
+        transform: translateX(15.8rem);
+      }
+      .nav-item:nth-child(4):hover ~ .active{
+        transform: translateX(24rem);
+      }
+
+      /* css for container */
+      .container {
+        border: 1px solid white;
+        border-radius: 25px;
+        margin: 130px 80px;
+        padding: 50px 25px;
+        text-align: center;
+        width: 35%;
+      }
+
+      .container h1 {
+        margin-top: 0%;
+        line-height: 2em;
+      }
+
+      .form-detail input {
+        border-radius: 8px;
+        margin: 17px 15px;
+        padding: 5px 10px;
+        display: block;
+        width: 400px;
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header class="header">
+      <!-- left box for logo -->
+      <div class="left">
+        <img src="image/GymWebsiteLogo.png" alt="" />
+        <div>My Fitness</div>
+      </div>
+
+      <!-- mid box for nav bar -->
+      <div class="mid">
+        <ul class="navbar">
+          <li class="nav-item">
+            <a href="GymWebsite.html" class="navlink">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="fitnessClub.html" class="navlink">Fitnes Clubs</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="navlink">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="navlink">Contact Us</a>
+          </li>
+          <div class="active"></div>
+        </ul>
+      </div>
+
+      <!-- right box for buttons -->
+      <div class="right">
+        <button class="btn">
+          <a href="#"> Call Us Now</a>
+        </button>
+        <button class="btn">
+          <a href="#">Email Us</a>
+        </button>
+      </div>
+    </header>
+    <div class="container">
+      <h1>join the best gym now</h1>
+      <form action="">
+        <div class="form-detail">
+          <input type="text" placeholder="enter your name" />
+        </div>
+        <div class="form-detail">
+          <input type="email" placeholder="enter your email id" />
+        </div>
+        <div class="form-detail">
+          <input type="password" placeholder="enter password" />
+        </div>
+        <div class="form-detail">
+          <input type="number" placeholder="enter your contact no" />
+        </div>
+        <button class="btn">
+          <input type="submit" placeholder="submit" />
+        </button>
+      </form>
+    </div>
+    
+  </body>
+</html>
